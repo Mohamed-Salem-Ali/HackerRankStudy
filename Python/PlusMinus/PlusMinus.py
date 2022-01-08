@@ -24,7 +24,8 @@ def plusMinus(arr):
             negative+=1
         else:
             positive +=1
-    print(round(positive/len(arr),6))
+    print(round(positive/len(arr),6)) # output 0.5
+        #print('%5f' % round((3/6),6)) to make ouput 0.50000 
     print(round(negative/len(arr),6))
     print(round(zero/len(arr),6))
 if __name__ == '__main__':
