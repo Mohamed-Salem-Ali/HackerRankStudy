@@ -15,10 +15,19 @@ import sys
 
 def timeConversion(s):
     # Write your code here
-    print("salem")
+    x=s.split(":")
+    y= x[-1][2:].lower()
+    if y =="pm":
+        if(x[0]!="12"):
+            x[0]=str(int(x[0])+12)
+    elif y=="am":
+        if(x[0]=="12"):
+            x[0]="00"
+    z=x[0]+":"+x[1]+":"+x[2][:2]
+    print(z)
 if __name__ == '__main__':
 
-    s = input("enter time")
+    s = input("enter time: ")
 
     result = timeConversion(s)
 
